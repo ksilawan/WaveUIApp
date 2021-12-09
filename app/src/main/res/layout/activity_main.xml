@@ -8,9 +8,9 @@
 
     <View
         android:id="@+id/view"
-        android:background="@color/katrina"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:background="@color/katrina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +21,8 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="220dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/migo" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,14 +38,12 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
 
-
     <TextView
         android:id="@+id/TextView"
         android:layout_width="361dp"
         android:layout_height="80dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
         android:lineSpacingExtra="4dp"
         android:text="Learning an Android Programming is a great advantage!!!"
         android:textAlignment="center"
@@ -52,13 +51,29 @@
         android:textSize="20sp"
         android:translationX="-200dp"
         android:translationY="550dp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:layout_editor_absoluteX="25dp" />
 
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@empty"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Getting Started"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
